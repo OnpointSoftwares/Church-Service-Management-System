@@ -20,8 +20,13 @@ if($success == true)
 	$_SESSION['user_id'] = $user_id;
 	$_SESSION['role'] = $role;
 	$_SESSION['name'] = $name;
-
-	header("location: ../admin/admin.php");
+	if($role=='admin')
+	{
+		header("location: ../admin/admin.php");
+	}
+	else{
+		header("location:../member/index.php");
+	}
 }
 else
 {

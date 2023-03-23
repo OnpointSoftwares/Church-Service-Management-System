@@ -1,11 +1,4 @@
-<?php  
-session_start(); 
-if(isset($_SESSION['admin_sid']) || isset($_SESSION['customer_sid']))
-{
-	header("location:index.php");
-}
-else{
-?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -133,7 +126,7 @@ else{
         </div>		
         <div class="row">
           <div class="input-field col s12">
-			<a href="javascript:void(0);" onclick="document.getElementById('formValidate').submit();" class="btn waves-effect waves-light col s12">Login</a>
+			<a href="javascript:void(0);" onclick="document.getElementById('formValidate').submit();" class="btn waves-effect waves-light col s12">Register</a>
           </div>
           <div class="input-field col s12">
             <p class="margin center medium-small sign-up">Already have an account? <a href="login.php">Login</a></p>
@@ -213,6 +206,3 @@ else{
     </script>
 </body>
 </html>
-<?php
-}
-?>

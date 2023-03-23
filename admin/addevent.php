@@ -78,28 +78,28 @@ include_once("config.php");
         <div class="row margin">
           <div class="input-field col s12">
             <i class="mdi-action-lock-outline prefix"></i>
-            <input name="fname" id="fname" type="text">
+            <input name="name" id="name" type="text">
             <label for="password">Event</label>
           </div>
         </div> 
         <div class="row margin">
           <div class="input-field col s12">
             <i class="mdi-action-lock-outline prefix"></i>
-            <input name="idno" id="idno" type="number">
+            <input name="description" id="description" type="text">
             <label for="password">Description</label>
           </div>
         </div> 
         <div class="row margin">
           <div class="input-field col s12">
             <i class="mdi-social-person-outline prefix"></i>
-            <input name="username"  id="username" type="date" autofill="false">
+            <input name="date"  id="date" type="date" autofill="false">
 
           </div>
         </div>
         <div class="row margin">
           <div class="input-field col s12">
             <i class="mdi-action-lock-outline prefix"></i>
-            <input name="currentpassword" id="password" type="text">
+            <input name="venue" id="venue" type="text">
             <label for="password">Venue</label>
           </div>
           <div class="row">
