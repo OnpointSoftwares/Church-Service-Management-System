@@ -77,20 +77,20 @@ include_once("config.php");
         <div class="row margin">
           <div class="input-field col s12">
             <i class="mdi-action-lock-outline prefix"></i>
-            <input name="fname" id="fname" type="text">
+            <input name="name" id="name" type="text">
             <label for="password">Name</label>
           </div>
         </div> 
         <div class="row margin">
           <div class="input-field col s12">
             <i class="mdi-action-lock-outline prefix"></i>
-            <input name="fname" id="fname" type="text">
+            <input name="phone" id="phone" type="text">
             <label for="password">Phone Number</label>
           </div>
         </div> 
         <div class="row margin">
           <div class="input-field col s12">
-            <select name="">
+            <select name="type">
               <option>Tithe</option>
               <option>Offerings</option>
 </select>
@@ -100,7 +100,7 @@ include_once("config.php");
         <div class="row margin">
           <div class="input-field col s12">
             <i class="mdi-action-lock-outline prefix"></i>
-            <input name="currentpassword" id="password" type="number">
+            <input name="amount" id="amount" type="number">
             <label for="password">Amount</label>
           </div>
      <div class="row">
