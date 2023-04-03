@@ -18,7 +18,7 @@
         <!--Top menu -->
         <div class="section">
             <div class="top_navbar">
-                <h3>Church Service Management System-ADMIN</h3>
+                <h3>Church Service Management System</h3>
                 <div class="hamburger">
                     <a href="#">
                         <i class="fas fa-bars"></i>
@@ -42,7 +42,7 @@
            <div class="profile">
                 <img src="images/logo.png" alt="profile_picture">
                 <h3><? echo $_SESSION['login']; ?></h3>
-                <p>System Admin</p>
+                <p>Church Member</p>
             </div>
             <!--menu item-->
             <ul>

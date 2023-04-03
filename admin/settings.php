@@ -8,6 +8,7 @@
   <title>Church Service Management</title>
 <?php
 include_once("config.php");
+session_start();
 ?>
   <!-- Favicons-->
   <link rel="icon" href="images/favicon/favicon-32x32.png" sizes="32x32">
@@ -69,7 +70,7 @@ include_once("config.php");
 									<ul id="projects-collection" class="collection">
                                     <div id="login-page" class="row">
     <div class="col s12 z-depth-4 card-panel">
-      <form method="post" action="routers/router.php" class="login-form" id="form">
+      <form method="post" action="routers/router1.php" class="login-form" id="form">
         <div class="row">
           <div class="input-field col s12 center">
             <p class="center login-form-text">Update your details</p>
@@ -78,7 +79,7 @@ include_once("config.php");
         <div class="row margin">
           <div class="input-field col s12">
             <i class="mdi-action-lock-outline prefix"></i>
-            <input name="fname" id="fname" type="text">
+            <input name="name" id="fname" type="text">
             <label for="password">Name</label>
           </div>
         </div> 
@@ -92,7 +93,7 @@ include_once("config.php");
         <div class="row margin">
           <div class="input-field col s12">
             <i class="mdi-social-person-outline prefix"></i>
-            <input name="username" value='<?php echo $_SESSION['login']; ?>' id="username" type="text" autofill="false">
+            <input name="username" value='<?php echo $_SESSION['name']; ?>' id="username" type="text" autofill="false">
             <label for="username" class="center-align">Username</label>
           </div>
         </div>
@@ -105,7 +106,7 @@ include_once("config.php");
           <div class="row margin">
           <div class="input-field col s12">
             <i class="mdi-action-lock-outline prefix"></i>
-            <input name="password" id="password" type="password">
+            <input name="newpassword" id="password" type="password">
             <label for="password">New Password</label>
           </div>
           

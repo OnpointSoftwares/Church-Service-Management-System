@@ -38,7 +38,7 @@ tr:nth-child(even) {
   </tr>
     <?php
     $conn=mysqli_connect("localhost","root","","ChurchManagement_db");
-    $sql="select * from offerings";
+    $sql="select * from offerings order by TimeStamp desc";
     $query=mysqli_query($conn,$sql);
     while($row=mysqli_fetch_assoc($query))
     {
